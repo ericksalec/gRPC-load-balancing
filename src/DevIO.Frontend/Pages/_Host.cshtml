@@ -1,0 +1,10 @@
+﻿@page "/"
+@using global::Frontend
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@namespace Frontend.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout";
+}
+
+<component type="typeof(App)" render-mode="ServerPrerendered" />
